@@ -1,0 +1,16 @@
+The test at the last cell on CurrentVersion.ipynb does the following:
+
+  -> uses 3 hidden layers of sizes 10,10,5 respectively
+  -> epoch = 1, fixed
+  -> uses mini-batch SGD of mini-batch_size = 5
+  -> accepts convergence if the difference between current loss(error) and previous loss is below 0.0001
+  -> performs itself 100 times and takes the average for total delay & iteration calculation
+
+What it does not do:
+
+  -> does not satisfy non-i.i.d set requirements
+  -> no plots of any kind (accuracy&epoch,loss&epoch,delay&update)
+  -> epoch number is not mutable, it's fixed to 1 for faster performance
+  -> does not try different stopping conditions other than 0.0001
+  
+  
