@@ -1,4 +1,4 @@
-# machineLearning
+# machine_learning
 ```bash
 proposes several ML algorithms and analytics tools
 
